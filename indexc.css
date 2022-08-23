@@ -1,0 +1,272 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    height:3rem;
+    width:100%;
+}
+body{
+    height: 100vh;
+    width:100%;
+}
+.logopic{
+    align-items: center;
+}
+nav{
+    display: flex;
+    text-decoration: none;
+}
+nav a{
+      text-decoration: none; 
+     color: black;
+}
+nav ul{
+    display: flex;
+}
+nav li{
+    display: flex;
+     padding: 10px; 
+}
+.profile
+{
+    display: flex;
+    justify-content: space-evenly;    
+    width: calc(100% - 72rem);
+    align-items: center;
+}
+.quotes_image{
+    padding:1rem 0  1rem 1.5rem ;
+    display: flex;
+    justify-content: space-between;
+    height:30rem;
+    width:100%;
+}
+.content
+{
+    width: 25%;
+}
+ .Image 
+{
+    width:75%;
+    position:relative;
+    z-index: -1;
+} 
+.title{
+    display:flex;
+    flex-direction: column;
+    margin-top: 2.5rem;
+    margin-left:1rem;
+    font-size: 3rem;
+    font-weight: 500;
+}
+.title button{
+    padding:0.5rem 1rem;
+    background: #000;
+    color: white;
+    border-radius: 20px;
+    align-items:initial;
+}
+.quotes_word
+{
+    position: absolute;
+    z-index: 2;
+    background-color: white;
+    width: 800px;
+}
+.plant_quotes{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 3rem 3rem 1rem;
+}
+.plant_quotes h4{
+    width: 14rem;
+}
+.plant_quotes p{
+    padding-top: 1rem;
+    width:auto;
+    color: gray;
+    font-size: small;
+}
+.word{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15px;
+    align-items: center;
+    width:20rem;
+}
+.Blommberg{
+    font-size:1.5rem;
+    font-weight: 900;
+    color: gray;
+}
+.Forbes{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: gray;
+}
+.about_plant_Explanation
+{
+    display: flex;
+    padding: 2rem;
+    /* padding-right: 4rem; */
+    /* justify-content: space-between; */
+}
+.about_plant_Explanation p
+{
+    width:500px;
+    font-size:23px;
+
+}
+.about_plant_Explanation h2 
+{
+    width:600px;
+    font-size: 30px;
+    padding-left: 5rem;
+}
+.learn_more
+{
+    display: flex;
+    justify-content: center;
+    column-gap: 15px;
+    align-items: center;
+    padding: 5px;
+}
+.plant_growth 
+{
+    margin: 2px;
+    padding: 2.5rem;
+    
+}
+.scroll_bar
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.menu 
+{
+    display:flex;
+    flex-direction: column;
+    line-height: 70px;
+    padding-left: 20px;
+  
+}
+.menu button 
+{
+    padding:0.5rem 1rem;
+    background: #000;
+    color: white;
+    border-radius: 20px;
+    align-items:initial;
+}
+.menu h1
+{
+    width:380px;
+    line-height: 35px;
+}
+.Pictures 
+{
+    padding-left: 2rem;
+   
+}
+.images_horizontal
+{
+    display: flex;
+    padding-left: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    column-gap: 20px;
+}
+.plant_names
+{
+    padding-left: 2rem;
+    column-gap: 30px;
+    display: flex;
+}
+.Fiddle_leaf{
+    display: flex;
+    width: 350px;
+    justify-content: space-between;
+}
+  .Aloe_vera
+{
+    display: flex;
+    width: 350px;
+    justify-content: space-between;
+}
+  .Strelitzia_nicolai
+{
+    display: flex;
+    width: 350px;
+    justify-content: space-between;
+}
+.Ficus
+{
+    display: flex;
+    width: 180px;
+    justify-content: space-between;
+}    
+.critisize
+{
+    display: flex;
+    padding: 2rem;
+    justify-content: space-between;
+    height:262px;
+}
+.review 
+{
+    width:302px;
+    height:200px;
+    line-height: 3rem;
+}
+.review p 
+{
+    line-height: 15px;
+}
+.stars 
+{
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+.adore
+{
+    width:570px;
+    height:292px;
+    font-size: 25px;
+}
+.move
+{
+    display: flex;
+}
+.Author_name 
+{
+    text-align: center;
+    height:65px;
+}
+.stay_update
+{
+    display: flex;
+    padding: 2.5rem;
+    /* justify-content: space-evenly; */
+}
+.stay_update h1 
+{
+    width:500px;
+
+}
+footer{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 1.5rem;
+    height:3rem;
+    background-color: whitesmoke;
+}
