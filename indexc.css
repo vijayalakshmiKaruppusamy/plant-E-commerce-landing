@@ -3,13 +3,17 @@
     margin:0;
     box-sizing: border-box;
 }
+ body{
+    max-width: 1440px;
+    margin:0 auto;
+} 
 header{
     display:flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 1.5rem;
     height:3rem;
-    font-family: 'Quicksand';
+    font-family: 'quicksand';
 }
 .logopic{
     align-items: center;
@@ -38,10 +42,10 @@ nav li{
     align-items: center;
 }
 .besthouse{
-    display: flex;
+    display: flex;;
     justify-content: space-between;
     padding:2rem 0.5rem; 
-    font-family: 'Lora';
+    /* font-family: 'Lora'; */
 }
 .textcontainer{
     padding:2rem;
@@ -50,6 +54,7 @@ nav li{
     font-size: 55px;
     font-weight: 500;
     margin-bottom: 1.5rem;
+    font-family: 'Belleza';
 }
 .textcontainer button{
     background-color: black;
@@ -57,12 +62,17 @@ nav li{
     border-radius: 30px;
     padding:0.5rem 1.5rem;
     text-align: center;
+    font-family: 'Aeonik';
 }
 .beautifulliving{
-    padding:1.5rem 8rem 1.5rem 0rem;
+
+    padding: 1.5rem 1rem 0.5rem 0rem;
+    font-family: 'Aeonik';
 }
 .highlighttext{
     font-size: 30px;
+    font-weight: 600;
+  
 }
 .lighttext{
     font-size: 15px;
@@ -95,31 +105,54 @@ nav li{
 }
 .leftparagraph{
     font-size: 20px;
+    font-family: 'Aeonik';
 }
 .rightparagraph{
     font-size: 36px;
+    font-family: 'Lora';
 }
 .learn_more{
     margin:1rem;
     display: flex;
     align-items: center;
+    font-family: 'Aeonik';
 }
 .learn_more img{
     padding-left:0.5rem;
     justify-content: center;
 }
+.banner
+{
+    /* padding: 3rem 0 0 0; */
+    height: 700px;
+    position: relative;
+    
+}
+
 .plant_growth{
     padding: 2rem;
+
 }
 .plant_growth img{
-    width: 100%;
+    width:100%;
 }
+.move_icon{
+    display: flex;
+}
+
 .scroll_bar
 {
     display: flex;
+    width: 100%;
+    position: absolute;
+    height: 350px;
+    z-index: -1;
+    bottom: 0;
     justify-content: space-between;
+    background-color: whitesmoke;
+    align-items: flex-end;
     padding: 2rem;
-    font-family: 'Lora';
+    font-family: 'Aeonik';
 }
 .menu 
 {
@@ -127,8 +160,14 @@ nav li{
     flex-direction: column;
     row-gap:1rem;
     padding: 2rem 1.5rem; 
-    font-family: 'Lora';
+    font-family: 'Aeonik';
   
+}
+.quotes_button{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    font-family: 'Lora';
 }
 .menu button 
 {
@@ -149,7 +188,7 @@ nav li{
 {
     display: flex;
     justify-content: space-between;
-    font-family: 'Lora';
+    font-family: 'Aeonik';
 }
 .critisize
 {
@@ -164,6 +203,7 @@ nav li{
     flex-direction: column;
     row-gap: 1rem;
     width:300px;
+    font-family: 'Aeonik';
 }
 .stars 
 {
@@ -181,6 +221,7 @@ nav li{
     text-align: left;
     width:570px;
     font-size: 25px;
+    font-family: 'Lora';
 }
 .move img
 {
@@ -200,17 +241,17 @@ nav li{
     padding: 2.5rem 1rem;
     font-family: 'Lora';
 }
-.stay_update h1 
+.stay_update div
 {
     font-size: 55px;
+    font-weight: 600;
     padding: 0 1.5rem;
+    font-family: 'Lora';
 }
 .email 
 {
     display: flex;
-    justify-content: space-between;
     align-items: flex-end;
-    border-bottom:2px solid black ;
 }
 .email button{
     padding:0.5rem 1rem; 
@@ -225,13 +266,13 @@ nav li{
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom: solid #eeeeee 1px;
+    border-bottom: solid black 1px; 
    
 }
 .Plant_images{
     display: flex;
     flex-direction: column;
-    row-gap: 1rem;
+    /* row-gap: 1rem; */
 }
 .Pictures{
     display: flex;
@@ -241,7 +282,8 @@ nav li{
 
 .get_inspired {
     position: relative;
-    padding: 6px;
+    padding-left: 6px;
+    
     
 }
 .ad{
@@ -283,27 +325,175 @@ footer{
     width: calc(100% - 72rem);
     align-items: center;
 }
-.banner
-{
-    background-color: whitesmoke;
-}
 
- /* @media only screen and  (min-width:375px) {
+  
+@media only screen and (max-width: 390px) {
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
     header nav{
         display: none;
     }
     .profile{
-        width:50%;
+        width:30%;
     }
+   .besthouse{
+        padding: 0;
+        margin:10px;
+        font-family: Lora;
+     }
+    .textcontainer{
+           padding: 1rem;
+    }
+     .title {
+        font-size: 19px;
+    }
+    .beautifulliving {
+        width: 145px;
+    }  
+   .highlighttext {
+    font-size: 11px;
+    font-weight: 700;
+    }
+    .lighttext {
+    font-size: 6px;
+    }
+    .titlefooter {
+        font-size: 13px;
+     } 
+     .image img{
+        width:200px;
+        height:200px;
+    }
+   .about_plant_Explanation {
+            padding: 0;
+            font-family: Lora;
+            text-align: center;
+            margin:10px;
+  }
+ .houseplant {
+     flex-direction: column;
+     row-gap: 10px;
+     padding: 0;
+}
+.leftparagraph {
+    font-size: 14px;
+    width: 300px;
+}
+.rightparagraph {
+    font-size: 20px;
+    font-weight: 700;
+    width: 319px;
+}
+.learn_more {
+   margin:5px;
+   font-size: 15px;
+}
+.quotes_button{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
 
-    .besthouse{
-        width:375px;
-    }
-    .textcontainer
-    {
-        width:11rem;
-    }
-    .image img{
-        width:11rem;
-    } 
-}  */
+}
+.images_horizontal{
+    padding: 0.5rem;
+}
+.critisize {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+    font-family: Lora;
+}
+.review {
+    row-gap: 10px;
+    text-align: center;
+}
+.stars{
+    justify-content: center;
+    column-gap: 5px;
+}
+.adore {
+    text-align: center;
+    width: 300px;
+    font-weight: 600;
+    font-size: 20px;
+}
+.Author_name{
+    text-align: center;
+}
+.move{
+    text-align: center;
+}
+.ad{
+    row-gap: 1px;
+    top:2px;
+    left:6px;
+}
+.grow{
+    width:380px;
+}
+.ad h1{
+   font-size: 8px;    
+}
+.ad p{
+    font-size: 5px;
+}
+.plant_left{
+    width:165px;
+}
+.plant_right{
+    width:180px;
+}
+.check_it_out img{
+    padding: 0;
+}
+.next{
+    width:30px;
+    height:7px;
+    object-fit: contain;
+}
+.banner{
+    height: 210px;
+    position: relative;
+}
+.scroll_bar {
+    display: flex;
+    position: absolute;
+    height: 100px;
+    z-index: -1;
+    bottom: 0;
+    align-items: flex-end;
+    padding: 0;
+}
+.move_icon img{
+    object-fit: contain;
+    width: 20px;
+    height: 20px;
+}
+
+
+.stay_update{
+    flex-direction: column;
+    align-items: center;
+}
+.stay_update div{
+    font-size: 18px;
+    padding-bottom: 1rem;
+}
+footer{
+    flex-direction: column;
+    row-gap: 1rem;
+}
+.social_media{
+    justify-content: space-evenly;
+    width:390px;   
+    border-top:solid  rgb(59, 59, 59) 0.5px; 
+    padding-top: 1.5rem;
+}
+footer nav ul{
+    flex-direction: column;
+    align-items: center;
+  }
+}
