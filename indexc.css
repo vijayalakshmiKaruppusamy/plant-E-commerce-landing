@@ -1,209 +1,256 @@
 *{
-    padding: 0;
-    margin:0;
     box-sizing: border-box;
 }
- body{
+body{
     max-width: 1440px;
     margin:0 auto;
-} 
-header{
-    display:flex;
+}
+.desktop{
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 1.5rem;
-    height:3rem;
-    font-family: 'quicksand';
+    padding: 0.25rem 1.5rem ;
 }
-.logopic{
-    align-items: center;
+.mobile{
+    display: none;
+}
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+ .ham{
+    display: block;
+    width:20px;
+    height:3px;
+    margin: 2px auto;
+    background-color: grey;
+} 
+.linkoptions  ul{
+    display: flex;
+}
+.linkoptions li{
+    list-style: none;
+    padding: 8px;
+    font-size: 15px;
+    line-height: 22px;
 }
 nav{
-    display: flex;
-    text-decoration: none;
-            
+    /* width:350px; */
+    font-family: 'Quicksand';
+    font-weight: 400;
+    font-size: 16px;
 }
 nav a{
-      text-decoration: none; 
-     color: black;
-}
+    text-decoration: none; 
+    color: black;
+}  
 nav ul{
     display: flex;
+    justify-content: space-evenly;
+    padding: 0;
 }
-nav li{
+nav  li{
     display: flex;
-    padding: 0.625rem;
-}
-.profile
+} 
+.Profile
 {
     display: flex;
-    justify-content: space-evenly;    
-    width: calc(100% - 72rem);
+    justify-content: space-between; 
+    width: 150px;
+    /* width: calc(100% - 72rem); */
     align-items: center;
 }
-.besthouse{
-    display: flex;;
-    justify-content: space-between;
-    padding:2rem 0.5rem; 
-    /* font-family: 'Lora'; */
+.best_house{
+    display: flex;
+    font-family:'Lora';
 }
-.textcontainer{
-    padding:2rem;
+.text_content{
+    display: flex;
+    /* width:40%; */
+    flex-direction: column;
+    margin: 0.5rem;
+    padding: 1.5rem;
 }
-.title{
-    font-size: 55px;
-    font-weight: 500;
-    margin-bottom: 1.5rem;
+.text_head{
+    font-size: 70px;
+    width:450px;
+    margin: 0;
     font-family: 'Belleza';
 }
-.textcontainer button{
+.plantImage{
+    /* width:60%; */
+}
+.plantImage img{
+    object-fit: cover;
+    object-position: right;
+    width:100%;
+    height:100%;
+}
+ .beautifulliving
+{
+    margin:2px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+} 
+.highlighttext{
+    font-size: 24px;
+    font-weight: 500;
+    width:280px;
+}
+.lighttext{
+    font-size: 16px;
+    width:280px;
+    margin: 0;
+}
+.titlefooter{
+    display: flex;
+    justify-content: space-between;
+    font-size: 36px;
+    width:400px;
+    opacity: 0.5;
+    margin: 0;
+}
+ .text_content button{
+    width:130px;
     background-color: black;
     color:white;
     border-radius: 30px;
     padding:0.5rem 1.5rem;
     text-align: center;
-    font-family: 'Aeonik';
+    margin-top: 2rem;
 }
-.beautifulliving{
-
-    padding: 1.5rem 1rem 0.5rem 0rem;
-    font-family: 'Aeonik';
-}
-.highlighttext{
-    font-size: 30px;
-    font-weight: 600;
-  
-}
-.lighttext{
-    font-size: 15px;
-    margin:1rem 1rem 1rem 0;
-}
-.titlefooter{
+.houseplant{
     display: flex;
+    padding: 2rem;
     justify-content: space-between;
-    font-weight: 900;
-    font-size: 30px;
-}
-.image img{
-    width:100%;
-    height:100%;
-}
-.about_plant_Explanation{
-    display: flex;
-    flex-direction: column;
-    padding:0 1.5rem;
-    align-items: center;
     font-family: 'Lora';
-
-
-} 
-.houseplant
-{
-    display: flex;
-    column-gap:10%;
-    padding:1rem 6rem 1rem 2rem;
 }
 .leftparagraph{
-    font-size: 20px;
-    font-family: 'Aeonik';
+    font-size: 24px;
+    width:518px;
+    font-weight: 250;
+    margin-top: 6px;
 }
 .rightparagraph{
     font-size: 36px;
-    font-family: 'Lora';
+    width:626px;
+    font-weight: 500;
+    margin: 0;
 }
 .learn_more{
-    margin:1rem;
     display: flex;
+    justify-content: center;
     align-items: center;
-    font-family: 'Aeonik';
+    font-size: 20px;
+    font-weight: 400;
 }
 .learn_more img{
-    padding-left:0.5rem;
-    justify-content: center;
+    padding-left: 1rem;
 }
-.banner
+ .banner
 {
-    /* padding: 3rem 0 0 0; */
     height: 700px;
     position: relative;
-    
-}
-
-.plant_growth{
-    padding: 2rem;
-
+    font-family: 'Lora';
 }
 .plant_growth img{
-    width:100%;
+    padding: 1.5rem;
+    object-fit: cover;
 }
 .move_icon{
     display: flex;
 }
-
 .scroll_bar
 {
     display: flex;
     width: 100%;
     position: absolute;
-    height: 350px;
+    height: 400px;
     z-index: -1;
-    bottom: 0;
+    bottom: 3rem;
     justify-content: space-between;
-    background-color: whitesmoke;
+    background-color: #EDEDED;
     align-items: flex-end;
-    padding: 2rem;
-    font-family: 'Aeonik';
+    padding:0  1rem 2rem 1.5rem;
 }
-.menu 
-{
-    display:flex;
-    flex-direction: column;
-    row-gap:1rem;
-    padding: 2rem 1.5rem; 
-    font-family: 'Aeonik';
-  
+.step1{
+    font-size: 20px;
+    font-weight: 500;
+    margin:0;
+} 
+.quotes{
+    font-size: 36px;
+    font-weight: 600;
+    margin: 0;
 }
-.quotes_button{
-    display: flex;
-    flex-direction: column;
-    row-gap: 1rem;
+.menu{
+    padding:0 1.5rem 2rem 1.5rem;
     font-family: 'Lora';
 }
-.menu button 
-{
-     padding:0.5rem 1rem; 
-    background: #000;
-    color: white;
-    border-radius: 20px;
-    font-family: 'Lora';
-
+.quotes_button p{
+    font-size: 40px;
+    font-weight: 600;
+    width:500px;
+    margin: 0;
+}
+.quotes_button button{
+    width:100px;
+    background-color: black;
+    color:white;
+    border-radius: 30px;
+    padding:0.5rem 1.5rem;
+    text-align: center;
+    margin-top: 17px;
+}
+.ourshop{
+    font-size: 20px;
+    font-weight: 500;
 }
 .images_horizontal{
     display: flex;
     column-gap: 1.5rem;
-    padding-left: 1rem;
+    padding-left: 1.5rem;
     overflow-x: scroll;
+}
+.images_horizontal img{
+    width:368px;
+    height: 577px;
+    object-fit: cover;
 }
 .caption
 {
     display: flex;
     justify-content: space-between;
-    font-family: 'Aeonik';
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Lora';
 }
 .critisize
 {
     display: flex;
-    padding: 2rem; 
+    padding: 1.5rem 1rem 0.5rem 1.5rem; 
     justify-content: space-between;
     font-family: 'Lora';
 }
 .review 
 {
-    display: flex;
-    flex-direction: column;
-    row-gap: 1rem;
+    width:24%;
+    /* width:300px; */
     width:300px;
-    font-family: 'Aeonik';
+}
+.review h4{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0 0 1rem 0;
+}
+.feedback{
+    font-size: 16px;
+    margin: 0;
+}
+.count{
+    font-size: 13px;
+    margin: 0;
 }
 .stars 
 {
@@ -217,99 +264,119 @@ nav li{
 .adore{
     display: flex;
     flex-direction: column;
-    row-gap: 1rem;
-    text-align: left;
-    width:570px;
-    font-size: 25px;
-    font-family: 'Lora';
+    row-gap: 2rem;
+    width:50%;
+}
+.adorecontent{
+    /* width:676px; */
+    font-weight: 600;
+    font-size: 30px;
+    margin: 0;
+}
+.name {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+}
+.place{
+    font-size: 16px;
+    font-weight: 250;
+    margin: 0;
+}
+.move{
+    display: flex;
+    align-items: flex-start;
 }
 .move img
 {
     object-fit: contain;
-
 }
-.Author_name 
-{
-    text-align: left;
-    font-size: 15px;
-}
-
-.stay_update
-{
+ .Pictures{
     display: flex;
     justify-content: space-between;
-    padding: 2.5rem 1rem;
+    padding: 1.5rem;
+} 
+.plant_left{
+      object-fit: cover;
+      width:40%
+} 
+.plant_right{
+       object-fit: cover;
+       width:58%;
+}
+.get_inspired {
+    position: relative;
+    padding: 0 1rem 0 1.5rem;
+    object-fit: contain;
     font-family: 'Lora';
 }
-.stay_update div
-{
-    font-size: 55px;
+.grow{
+    width:100%;
+    object-fit: cover;
+}
+.ad{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+    position: absolute;
+    top: 1.5rem;
+    left: 16px;
+    padding:2rem ;
+}
+.ad h1{
+     font-size: 48px;
+     width:400px;
+     margin: 0;
+}
+.spotlight{
+font-size: 16px;
+width:328px;
+margin: 0;
+}
+.check_it_out{
+    font-size: 20px;
+    font-weight: 500;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+    width:166px;
+}
+.check_it_out p{
+    margin: 0;
+}
+.stay_update{
+     display: flex;
+     justify-content: space-between;
+     padding: 1rem;
+     font-family: 'Lora';
+}
+.stay_update p{
+    width:706px;
+    font-size: 40px;
     font-weight: 600;
-    padding: 0 1.5rem;
-    font-family: 'Lora';
+    padding-left: 1.5rem;
+    margin: 0;
 }
 .email 
 {
     display: flex;
     align-items: flex-end;
+    border-bottom: 2px solid black;
 }
 .email button{
     padding:0.5rem 1rem; 
     background: #000;
     color: white;
     border-radius: 20px;
-    font-family: 'Lora';
-    
+    margin-bottom:2px ;
+}
+.result{
+    color:red;
+    font-size: 9px;
 }
 .text-line {
     outline-style: none;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom: solid black 1px; 
-   
-}
-.Plant_images{
-    display: flex;
-    flex-direction: column;
-    /* row-gap: 1rem; */
-}
-.Pictures{
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem;
-} 
-
-.get_inspired {
-    position: relative;
-    padding-left: 6px;
-    
-    
-}
-.ad{
-    display: flex;
-    flex-direction: column;
-    row-gap: 1rem;
-    position: absolute;
-    top: 1.5rem;
-    left: 16px;
-    padding:2rem 1.5rem ;
-    font-family: 'Lora';
-}
-.ad h1{
-     font-size: 50px;
-}
-.ad p{
-font-size: 18px;
-}
-.check_it_out{
-
-    display: flex;
-    align-items: center;
-
-}
-.check_it_out img{
-    padding-left: 1.5rem;
+    border: none;
 }
 footer{
     display:flex;
@@ -322,178 +389,453 @@ footer{
 .social_media{
     display: flex;
     justify-content: space-evenly;    
-    width: calc(100% - 72rem);
+    width: 15%;
     align-items: center;
 }
+footer nav{
+    display: flex;
+    text-decoration: none;
+}
+footer nav a{
+      text-decoration: none; 
+     color: black;
+}
+footer nav ul{
+    display: flex;
+}
+footer nav li{
+    display: flex;
+    padding: 0.625rem;
+}
 
-  
-@media only screen and (max-width: 390px) {
+@media only screen and (min-width:320px) and (max-width: 550px)
+{
     *{
         margin:0;
         padding:0;
         box-sizing: border-box;
     }
-    header nav{
+    .header{
+        display: flex;
+        flex-direction: column;
+        row-gap: 5px;
+    }
+    .mobile{
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+        visibility: visible;
+    }
+    .hamburger{
+        display: block;
+    
+    }
+    .hamburger.active .ham:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active  .ham:nth-child(1){
+        transform:translateY(8px) rotate(45deg);
+    }
+    .hamburger.active  .ham:nth-child(3){
+        transform:translateY(-8px) rotate(-45deg);
+    }
+    .linkoptions  ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+   .linkoptions {
+        position: fixed;
+        left:100%;
+        top:60px;
+        gap:0;
+        background-color: whitesmoke;
+        width:100%;
+        height: 200px;
+        transition: 0.3s;
+    }
+    .links{
+        margin:  0;
+    }
+    .linkoptions.active{
+        left:0;
+    }
+    .linknumber{
+        transition:0.7s ease;
+    }
+    .linknumber:hover{
+        color: aqua;
+    }
+    .desktop{
+        width: 100%;
+    }
+    .logo img{
+        width:73px;
+    }
+    .Profile{
+        width: 190px;
+    }
+    .Profile img{
+        object-fit: cover;
+        width:17px;
+    }
+    .best_house{
+        height: 255px;
+    }
+    .text_content{
+        width:48%;
+        /* height: 245px; */
+        padding:0 0 0 1rem;
+        margin: 5px;
+
+    }
+    .plantImage{
+        width:52%;
+        height: 245px;
+    }  
+    .plantImage img{
+        object-fit: cover;
+    }    
+    .text_head{
+        font-size: 20px;
+        width:130px;
+        margin-top: 1.5rem;
+
+    }
+    .text_content button{
+          width:80px;
+          font-size: 9px;
+           border-radius: 20px;
+           padding: 5px 1.5px;
+           margin:1rem 0;
+    }
+    .beautifulliving{
+        padding: 0.5rem 0;
+        row-gap: 1.5rem;
+    }
+    .highlighttext{
+        font-size: 12px;
+        width:140px;
+    }
+    .lighttext{
+        font-size: 8px;
+        width:136px;
+    }
+    .titlefooter{
+        font-size: 12px;
+          width:140px;
+    }
+    .houseplant{
+        flex-direction: column;
+        padding: 0.5rem 0.5rem 0.5rem 1rem;
+        row-gap: 10px;
+    }
+    .leftparagraph{
+        width: 100%;
+        padding: 0 58px 0 58px;
+        font-size: 10px;
+         text-align: center;
+    }
+    .rightparagraph{
+        width: 100%;
+        font-size: 20px;
+        text-align: center;
+    }
+    .learn_more{
+        font-size: 12px;
+    }
+    .learn_more img{
+        width: 40px;
+        height: 24px;
+        object-fit: cover;
+    }
+    .banner{
+        height: 300px;
+    }
+    .plant_growth img{
+        height: 225px;
+        padding: 1rem;
+    }
+    .scroll_bar{
+        height: 150px;
+        padding:0 1rem 1rem 0.5rem;
+    }
+    .step1{
+        font-size: 7px;
+    } 
+    .quotes{
+        font-size: 13px;
+        margin: 0;
+    }
+    .move_icon img{
+        width:15px;
+        height: 15px;
+    }
+    .menu{
+        padding: 0 1.5rem 1rem 1rem ;
+    }
+    .ourshop{
+        font-size: 7px;
+        margin-bottom: 10px;
+    }
+    .quotes_button{
+        display: flex;
+        justify-content: space-between;
+    }
+    .quotes_button p{
+        width:220px;
+        font-size: 20px;
+    }
+    .quotes_button button{
+     width:80px;
+    font-size: 9px;
+    border-radius: 20px;
+    padding: 5px 1.5px;
+    margin-bottom: 10px;
+    }
+    .images_horizontal img{
+        width: 223px;
+        height: 349px;
+    }
+    .caption{
+        font-size: 10px;
+    }
+    .critisize{
+        flex-direction: column;
+        align-items: center;
+        padding: 1.5rem 0.5rem 0.5rem 1rem;
+    }
+    .review{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 1rem;
+    }
+    .review h4{
+        font-size: 10px;
+        text-align: center;
+        margin: 0;
+    }
+    .feedback{
+        width:145px;
+        font-size: 7px;
+        text-align: center;
+    }
+    .stars img{
+        height: 13px;
+        width: 13px;
+    }
+    .stars h5{
+        font-size: 7px;
+    }
+    .count{
         display: none;
     }
-    .profile{
-        width:30%;
+    .adore{
+        width:343px;
+        padding-top: 1rem;
     }
-   .besthouse{
-        padding: 0;
-        margin:10px;
-        font-family: Lora;
+    .move{
+        position: relative;
+        left:100px;
+        top:-38px;
+    }
+    .adorecontent{
+        width:343px;
+        font-size: 20px;
+        text-align: center;
      }
-    .textcontainer{
-           padding: 1rem;
+    .Pictures{
+        column-gap: 1rem;
+        padding:0 1rem 0.5rem 1rem;
     }
-     .title {
-        font-size: 19px;
+    .plant_left{
+          width:48%;
+          height: 279px;
     }
-    .beautifulliving {
-        width: 145px;
-    }  
-   .highlighttext {
-    font-size: 11px;
-    font-weight: 700;
+    .plant_right{
+        width:48%;
+        height: 279px;
     }
-    .lighttext {
-    font-size: 6px;
+    .get_inspired{
+        padding: 1rem;
     }
-    .titlefooter {
-        font-size: 13px;
-     } 
-     .image img{
-        width:200px;
-        height:200px;
+    .grow{
+        width:100%;
+        height: 198px;
     }
-   .about_plant_Explanation {
-            padding: 0;
-            font-family: Lora;
-            text-align: center;
-            margin:10px;
-  }
- .houseplant {
-     flex-direction: column;
-     row-gap: 10px;
-     padding: 0;
-}
-.leftparagraph {
-    font-size: 14px;
-    width: 300px;
-}
-.rightparagraph {
-    font-size: 20px;
-    font-weight: 700;
-    width: 319px;
-}
-.learn_more {
-   margin:5px;
-   font-size: 15px;
-}
-.quotes_button{
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
-
-}
-.images_horizontal{
-    padding: 0.5rem;
-}
-.critisize {
-    flex-direction: column;
-    align-items: center;
-    row-gap: 15px;
-    font-family: Lora;
-}
-.review {
-    row-gap: 10px;
-    text-align: center;
-}
-.stars{
-    justify-content: center;
-    column-gap: 5px;
-}
-.adore {
-    text-align: center;
-    width: 300px;
-    font-weight: 600;
-    font-size: 20px;
-}
-.Author_name{
-    text-align: center;
-}
-.move{
-    text-align: center;
-}
-.ad{
-    row-gap: 1px;
-    top:2px;
-    left:6px;
-}
-.grow{
-    width:380px;
-}
-.ad h1{
-   font-size: 8px;    
-}
-.ad p{
-    font-size: 5px;
-}
-.plant_left{
-    width:165px;
-}
-.plant_right{
-    width:180px;
-}
-.check_it_out img{
-    padding: 0;
-}
-.next{
-    width:30px;
-    height:7px;
-    object-fit: contain;
-}
-.banner{
-    height: 210px;
-    position: relative;
-}
-.scroll_bar {
-    display: flex;
-    position: absolute;
-    height: 100px;
-    z-index: -1;
-    bottom: 0;
-    align-items: flex-end;
-    padding: 0;
-}
-.move_icon img{
-    object-fit: contain;
-    width: 20px;
-    height: 20px;
+    .ad{
+        top:0;
+        padding: 1.5rem 1rem;
+    }
+    .ad{
+        row-gap: 2px;
+    }
+    .ad h1{
+        font-size: 20px;
+        width:167px ;
+    }
+    .spotlight{
+        font-size: 10px;
+        width:205px ;
+    }
+    .check_it_out{
+        width: 55px;
+    }
+    .check_it_out p{
+        font-size: 7px;
+     }
+    .check_it_out img{
+        width: 15px;
+        height: 15px;
+        object-fit: cover;
+    }
+    .stay_update{
+        flex-direction: column;
+        align-items: center;
+    }
+    .stay_update p{
+        width: 300px;
+        font-size:18px ;
+    }
+    .email{
+        width: 300px;
+        height: 0;
+        justify-content: space-between;
+        padding-left: 0.5rem;
+        position: relative;
+        top:70px;
+     }
+     .text-line{
+        background-color: whitesmoke;
+     }
+    footer{
+        flex-direction: column;
+        height: 430px;
+        row-gap: 1rem;
+        padding-top: 6rem;
+    }
+    .social_media{
+        justify-content: space-evenly;
+        width:100%; 
+        border-top:solid  rgb(59, 59, 59) 0.5px; 
+        padding-top: 1.5rem;
+    }
+    footer nav ul{
+        flex-direction: column;
+        align-items: center;
+      }
+    footer nav li{
+        padding: 1rem;
+    }
 }
 
-
-.stay_update{
-    flex-direction: column;
-    align-items: center;
+@media only screen and (min-width:551px) and (max-width:900px)
+{
+    .linkoptions li{
+        font-size: 12px;
+    }
+    .Profile{
+        width: 15%;
+    }
+    .text_content{
+        width: 55%;
+    }
+    .plantImage{
+        width:45%;
+    }
+    .text_head{
+        font-size: 40px;
+        width:90%;
+    }
+    .highlighttext{
+        width:90%;
+    }
+    .lighttext{
+        width:85%;
+    }
+    .titlefooter{
+        width:90%;
+        font-size: 20px;
+    }
+    .plantImage img{
+        object-fit: cover;
+        object-position: right;
+        width:100%;
+        height: 100%;
+    }
+    .leftparagraph{
+        font-size: 14px;
+    }
+    .rightparagraph{
+        font-size:20px;
+    }
+    .step1{
+        font-size: 12px;
+    }
+    .quotes{
+        font-size: 20px;
+    }
+    .move_icon{
+        width:20px;
+        height: 18px;
+        object-fit: cover;
+    }
+    .quotes_button p{
+        font-size: 24px;
+        width:40%
+    }
+    .ourshop{
+        font-size:18px ;
+    }
+    .adorecontent{
+        font-size: 16px;
+    }
+    .stay_update p{
+        font-size: 24px;
+    }
+    .ad h1{
+        font-size:16px ;
+    }
+    .ad p{
+        font-size: 10px;
+        width: 160px;
+    }
+    .check_it_out{
+        width:80px;
+    }
+    .check_it_out p{
+        font-size: 10px;
+    }
+    .check_it_out img{
+        width: 10px;
+        height: 10px;
+        object-fit: cover;
+    }
 }
-.stay_update div{
-    font-size: 18px;
-    padding-bottom: 1rem;
-}
-footer{
-    flex-direction: column;
-    row-gap: 1rem;
-}
-.social_media{
-    justify-content: space-evenly;
-    width:390px;   
-    border-top:solid  rgb(59, 59, 59) 0.5px; 
-    padding-top: 1.5rem;
-}
-footer nav ul{
-    flex-direction: column;
-    align-items: center;
-  }
-}
+ 
+@media only screen and (min-width:551px) and (max-width:700px)
+ {
+    .best_house{
+        height:350px;
+    }
+    .text_head{
+        font-size: 30px;
+    }
+    .highlighttext{
+       font-size: 16px;
+     }
+    .lighttext{
+        font-size: 10px;
+    }
+    .titlefooter{
+        font-size: 20px;
+    }
+    .quotes_button p{
+        width:300px;
+    }
+    .stay_update p{
+        font-size: 14px;
+    }
+   
+ }
