@@ -35,7 +35,7 @@ body{
     line-height: 22px;
 }
 nav{
-    /* width:350px; */
+    width:400px;
     font-family: 'Quicksand';
     font-weight: 400;
     font-size: 16px;
@@ -83,8 +83,8 @@ nav  li{
 .plantImage img{
     object-fit: cover;
     object-position: right;
-    width:100%;
-    height:100%;
+    width: 100%;
+    height: 100%;
 }
  .beautifulliving
 {
@@ -207,25 +207,24 @@ nav  li{
     font-size: 20px;
     font-weight: 500;
 }
-.images_horizontal{
+ .images_horizontal{
     display: flex;
-    column-gap: 1.5rem;
+    column-gap: 1rem;
     padding-left: 1.5rem;
     overflow-x: scroll;
 }
 .images_horizontal img{
-    width:368px;
-    height: 577px;
     object-fit: cover;
-}
+}  
 .caption
 {
+     width:368px;
     display: flex;
     justify-content: space-between;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 400;
     font-family: 'Lora';
-}
+} 
 .critisize
 {
     display: flex;
@@ -236,7 +235,6 @@ nav  li{
 .review 
 {
     width:24%;
-    /* width:300px; */
     width:300px;
 }
 .review h4{
@@ -268,7 +266,6 @@ nav  li{
     width:50%;
 }
 .adorecontent{
-    /* width:676px; */
     font-weight: 600;
     font-size: 30px;
     margin: 0;
@@ -298,7 +295,7 @@ nav  li{
 } 
 .plant_left{
       object-fit: cover;
-      width:40%
+      width:40%;
 } 
 .plant_right{
        object-fit: cover;
@@ -311,7 +308,7 @@ nav  li{
     font-family: 'Lora';
 }
 .grow{
-    width:100%;
+    width: 100%;
     object-fit: cover;
 }
 .ad{
@@ -392,21 +389,7 @@ footer{
     width: 15%;
     align-items: center;
 }
-footer nav{
-    display: flex;
-    text-decoration: none;
-}
-footer nav a{
-      text-decoration: none; 
-     color: black;
-}
-footer nav ul{
-    display: flex;
-}
-footer nav li{
-    display: flex;
-    padding: 0.625rem;
-}
+
 
 @media only screen and (min-width:320px) and (max-width: 550px)
 {
@@ -484,11 +467,9 @@ footer nav li{
     }
     .text_content{
         width:48%;
-        /* height: 245px; */
         padding:0 0 0 1rem;
         margin: 5px;
-
-    }
+  }
     .plantImage{
         width:52%;
         height: 245px;
@@ -598,6 +579,7 @@ footer nav li{
         height: 349px;
     }
     .caption{
+        width: 223px;
         font-size: 10px;
     }
     .critisize{
@@ -672,12 +654,12 @@ footer nav li{
         row-gap: 2px;
     }
     .ad h1{
-        font-size: 20px;
+        font-size: 18px;
         width:167px ;
     }
     .spotlight{
-        font-size: 10px;
-        width:205px ;
+        font-size: 8px;
+        width:150px ;
     }
     .check_it_out{
         width: 55px;
@@ -770,6 +752,23 @@ footer nav li{
     .rightparagraph{
         font-size:20px;
     }
+    .banner{
+           height: 550px;
+    }
+    .scroll_bar{
+           height: 280px;
+    }
+    .plant_growth img{
+        height: 430px;
+    }
+    .images_horizontal img{
+        width:100%;
+        height: 500px;
+        object-fit: cover;
+    }
+    .caption{
+        width:300px;
+    }
     .step1{
         font-size: 12px;
     }
@@ -794,8 +793,12 @@ footer nav li{
     .stay_update p{
         font-size: 24px;
     }
+    .ad{
+        top:0;
+    }
     .ad h1{
-        font-size:16px ;
+        font-size:28px ;
+        width: 250px;
     }
     .ad p{
         font-size: 10px;
@@ -830,6 +833,13 @@ footer nav li{
     }
     .titlefooter{
         font-size: 20px;
+    }
+    .ad {
+        top:0;
+    }
+    .ad h1{
+        font-size:20px;
+        width: 180px;
     }
     .quotes_button p{
         width:300px;
